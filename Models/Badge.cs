@@ -30,6 +30,10 @@ namespace YbadgesAPI.Models
         [Column("Date")]
         public string Date { get; set; } = "";
 
+        [Required(ErrorMessage = "Le Obtenu est obligatoire.")]
+        [Column("Obtenu")]
+        public Boolean Obtenu { get; set; } = false;
+
     }
 
 
