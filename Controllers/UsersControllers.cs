@@ -12,16 +12,16 @@ namespace YbadgesAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class UsersControllers : ControllerBase
     {
         private readonly ArchiDB _context;
 
-        public UsersController(ArchiDB context)
+        public UsersControllers(ArchiDB context)
         {
             _context = context;
         }
 
-        // GET: api/Users
+        // GET: api/UsersControllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
@@ -32,7 +32,7 @@ namespace YbadgesAPI.Controllers
             return await _context.Users.ToListAsync();
         }
 
-        // GET: api/Users/5
+        // GET: api/UsersControllers/5
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)
         {
@@ -50,7 +50,7 @@ namespace YbadgesAPI.Controllers
             return user;
         }
 
-        // PUT: api/Users/5
+        // PUT: api/UsersControllers/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUser(int id, User user)
@@ -81,7 +81,7 @@ namespace YbadgesAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Users
+        // POST: api/UsersControllers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
@@ -96,7 +96,7 @@ namespace YbadgesAPI.Controllers
             return CreatedAtAction("GetUser", new { id = user.ID }, user);
         }
 
-        // DELETE: api/Users/5
+        // DELETE: api/UsersControllers/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {

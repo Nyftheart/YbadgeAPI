@@ -30,6 +30,15 @@ namespace YbadgesAPI.Models
         [Column("MDP")]
         public string MDP { get; set; } = "";
 
+        [Required(ErrorMessage = "Le Classe est obligatoire.")]
+        [StringLength(150)]
+        [Column("Classe")]
+        public string Classe { get; set; } = "";
+
+        [Required(ErrorMessage = "Le Filiere est obligatoire.")]
+        [StringLength(150)]
+        [Column("Filiere")]
+        public string Filinere { get; set; } = "";
     }
 
 
