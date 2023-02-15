@@ -38,7 +38,7 @@ namespace YbadgesAPI.Models
         [Required(ErrorMessage = "Le Filiere est obligatoire.")]
         [StringLength(150)]
         [Column("Filiere")]
-        public string Filinere { get; set; } = "";
+        public string Filiere { get; set; } = "";
     }
 
 

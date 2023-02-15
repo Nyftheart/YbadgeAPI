@@ -12,11 +12,11 @@ namespace YbadgesAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersControllers : ControllerBase
+    public class Users : ControllerBase
     {
         private readonly ArchiDB _context;
 
-        public UsersControllers(ArchiDB context)
+        public Users(ArchiDB context)
         {
             _context = context;
         }
