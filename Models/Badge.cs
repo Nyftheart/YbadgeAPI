@@ -25,6 +25,21 @@ namespace YbadgesAPI.Models
         [Column("LinkImage")]
         public string LinkImage { get; set; } = "";
 
+        [Required(ErrorMessage = "Le LinkOBJ est obligatoire.")]
+        [StringLength(150)]
+        [Column("LinkOBJ")]
+        public string LinkOBJ { get; set; } = "";
+
+        [Required(ErrorMessage = "Le LinkMaterial est obligatoire.")]
+        [StringLength(150)]
+        [Column("LinkMaterial")]
+        public string LinkMaterial { get; set; } = "";
+
+        [Required(ErrorMessage = "Le Categorie est obligatoire.")]
+        [StringLength(150)]
+        [Column("Categorie")]
+        public string Categorie { get; set; } = "";
+
         [Required(ErrorMessage = "Le Date est obligatoire.")]
         [StringLength(150)]
         [Column("Date")]

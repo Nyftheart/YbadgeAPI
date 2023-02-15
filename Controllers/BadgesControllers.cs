@@ -12,16 +12,16 @@ namespace YbadgesAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BadgesController : ControllerBase
+    public class Badges : ControllerBase
     {
         private readonly ArchiDB _context;
 
-        public BadgesController(ArchiDB context)
+        public Badges(ArchiDB context)
         {
             _context = context;
         }
 
-        // GET: api/Badges
+        // GET: api/BadgesControllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Badge>>> GetBadge()
         {
@@ -32,7 +32,7 @@ namespace YbadgesAPI.Controllers
             return await _context.Badge.ToListAsync();
         }
 
-        // GET: api/Badges/5
+        // GET: api/BadgesControllers/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Badge>> GetBadge(int id)
         {
@@ -50,7 +50,7 @@ namespace YbadgesAPI.Controllers
             return badge;
         }
 
-        // PUT: api/Badges/5
+        // PUT: api/BadgesControllers/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBadge(int id, Badge badge)
@@ -81,7 +81,7 @@ namespace YbadgesAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Badges
+        // POST: api/BadgesControllers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Badge>> PostBadge(Badge badge)
@@ -96,7 +96,7 @@ namespace YbadgesAPI.Controllers
             return CreatedAtAction("GetBadge", new { id = badge.ID }, badge);
         }
 
-        // DELETE: api/Badges/5
+        // DELETE: api/BadgesControllers/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBadge(int id)
         {
