@@ -1,6 +1,8 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using MessagePack;
+using YbadgesAPI.Migrations;
 
 namespace YbadgesAPI.Models
 {
@@ -40,15 +42,18 @@ namespace YbadgesAPI.Models
         [Column("Categorie")]
         public string Categorie { get; set; } = "";
 
-        [Required(ErrorMessage = "Le Date est obligatoire.")]
-        [StringLength(150)]
-        [Column("Date")]
-        public string Date { get; set; } = "";
-
-        [Required(ErrorMessage = "Le Obtenu est obligatoire.")]
+        [Required(ErrorMessage = "Le tableau des Obtenu est obligatoire.")]
         [Column("Obtenu")]
-        public Boolean Obtenu { get; set; } = false;
+        public List<Obtenu> Obtenu { get; set; }
 
+    }
+
+    public class Obtenu
+    {
+        [System.ComponentModel.DataAnnotations.Key] // Définit cette propriété comme la clé primaire de la classe
+        public int Id { get; set; }
+        public string Date { get; set; }
+        public string IdUser { get; set; }
     }
 
 
