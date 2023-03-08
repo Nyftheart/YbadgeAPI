@@ -34,10 +34,12 @@
     <None Remove="Controllers\" />
     <None Remove="Microsoft.Data.Sqlite.Core" />
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
+    <None Remove="Migrations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Models\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 </Project>

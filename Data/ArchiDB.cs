@@ -16,5 +16,7 @@ namespace YbadgesAPI.Data
 
         public DbSet<YbadgesAPI.Models.Badge>? Badge { get; set; }
 
+        public DbSet<YbadgesAPI.Models.Obtenu>? Obtenu { get; set; }
+
     }
 }

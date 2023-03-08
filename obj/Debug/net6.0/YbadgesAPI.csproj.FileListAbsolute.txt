@@ -1,10 +1,3 @@
-/Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/YbadgesAPI.csproj.AssemblyReference.cache
-/Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/YbadgesAPI.GeneratedMSBuildEditorConfig.editorconfig
-/Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/YbadgesAPI.AssemblyInfoInputs.cache
-/Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/YbadgesAPI.AssemblyInfo.cs
-/Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/YbadgesAPI.csproj.CoreCompileInputs.cache
-/Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/YbadgesAPI.MvcApplicationPartsAssemblyInfo.cs
-/Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/YbadgesAPI.MvcApplicationPartsAssemblyInfo.cache
 /Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/bin/Debug/net6.0/appsettings.Development.json
 /Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/bin/Debug/net6.0/appsettings.json
 /Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/bin/Debug/net6.0/YbadgesAPI
@@ -282,6 +275,13 @@
 /Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
 /Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
 /Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/YbadgesAPI.csproj.AssemblyReference.cache
+/Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/YbadgesAPI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/YbadgesAPI.AssemblyInfoInputs.cache
+/Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/YbadgesAPI.AssemblyInfo.cs
+/Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/YbadgesAPI.csproj.CoreCompileInputs.cache
+/Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/YbadgesAPI.MvcApplicationPartsAssemblyInfo.cs
+/Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/YbadgesAPI.MvcApplicationPartsAssemblyInfo.cache
 /Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/staticwebassets/msbuild.YbadgesAPI.Microsoft.AspNetCore.StaticWebAssets.props
 /Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/staticwebassets/msbuild.build.YbadgesAPI.props
 /Users/nyftheart/Projects/YbadgesAPI/YbadgesAPI/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.YbadgesAPI.props

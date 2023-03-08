@@ -42,19 +42,12 @@ namespace YbadgesAPI.Models
         [Column("Categorie")]
         public string Categorie { get; set; } = "";
 
-        [Required(ErrorMessage = "Le tableau des Obtenu est obligatoire.")]
-        [Column("Obtenu")]
-        public List<Obtenu>? Obtenu { get; set; }
+        public int ObtenuID { get; set; }
+        [ForeignKey("ObtenuID")]
+        public Obtenu? Obtenu { get; set; }
 
     }
 
-    public class Obtenu
-    {
-        [System.ComponentModel.DataAnnotations.Key] // Définit cette propriété comme la clé primaire de la classe
-        public int Id { get; set; }
-        public string? Date { get; set; }
-        public string? IdUser { get; set; }
-    }
 
 
 }
