@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using YbadgesAPI.Data;
 
@@ -11,9 +12,10 @@ using YbadgesAPI.Data;
 namespace YbadgesAPI.Migrations
 {
     [DbContext(typeof(ArchiDB))]
-    partial class ArchiDBModelSnapshot : ModelSnapshot
+    [Migration("20230308102738_newBadgesData")]
+    partial class newBadgesData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -83,9 +85,11 @@ namespace YbadgesAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Date")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("IdUser")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
